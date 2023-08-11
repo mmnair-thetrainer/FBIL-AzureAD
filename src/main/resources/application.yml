@@ -1,0 +1,19 @@
+
+azure:
+  activedirectory:
+    tenant-id: da187936-0e1d-47ba-9adf-f95e2e13a03e
+    active-directory-groups: group1, group2
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password:
+  security:
+    oauth2:
+      client:
+        registration:
+          azure:
+            client-id: 21e6191e-5ee3-4c5f-8a26-69602d229c11
+            client-secret: XN38Q~krqEpNaODLwhlclguRx1cPjaQVudKHEcRy
+
