@@ -1,0 +1,5 @@
+com/example/demo/DemoApplication.class
+com/example/demo/AccountResource.class
+com/example/demo/WebSecurityConfig.class
+com/example/demo/SecurityConfiguration.class
+com/example/demo/OAuth2ResourceServerConfig.class

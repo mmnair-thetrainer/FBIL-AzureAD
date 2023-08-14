@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.microsoft.azure</groupId>
+    <artifactId>azure-dependencies-bom</artifactId>
+    <version>2.1.0.M6</version>
+    <packaging>pom</packaging>
+
+    <name>Azure SDK dependencies BOM</name>
+    <description>BOM for Azure SDK dependencies</description>
+    <url>https://github.com/VSChina/azure-dependencies-bom</url>
+
+    <organization>
+        <name>Microsoft</name>
+        <url>https://www.microsoft.com</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://github.com/VSChina/azure-dependencies-bom/blob/master/LICENSE</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>incarnation-p-lee</id>
+            <name>Pan Li</name>
+            <email>panli@microsoft.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com:VSChina/azure-dependencies-bom.git</connection>
+        <developerConnection>scm:git:ssh://github.com:VSChina/azure-dependencies-bom.git</developerConnection>
+        <url>https://github.com/VSChina/azure-dependencies-bom/tree/master</url>
+    </scm>
+
+    <!-- Azure SDK Version Properties -->
+    <properties>
+        <azure.sdk.version>1.14.0</azure.sdk.version>
+        <azure.adal4j.version>1.6.4</azure.adal4j.version>
+        <azure.applicationinsights.version>2.2.0</azure.applicationinsights.version>
+        <azure.eventhub.eph.version>1.0.0</azure.eventhub.eph.version>
+        <azure.servicebus.version>1.2.8</azure.servicebus.version>
+        <azure.client.runtime.version>1.6.0</azure.client.runtime.version>
+        <azure.storage.version>5.5.0</azure.storage.version>
+        <azure.storage.blob.version>10.5.0</azure.storage.blob.version>
+        <azure.documentdb.version>1.16.2</azure.documentdb.version>
+        <azure.keyvault.version>1.0.0</azure.keyvault.version>
+        <azure.media.version>0.9.8</azure.media.version>
+        <azure.client.authentication.version>1.6.1</azure.client.authentication.version>
+        <azure.cosmos.version>3.1.0</azure.cosmos.version>
+        <azure.monitor.micrometer.registry.version>1.1.1</azure.monitor.micrometer.registry.version>
+        <spring.data.cosmosdb.version>2.1.7</spring.data.cosmosdb.version>
+        <spring.data.gremlin.version>2.1.7</spring.data.gremlin.version>
+        <micrometer.core.version>1.1.1</micrometer.core.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Azure SDK -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure</artifactId>
+                <version>${azure.sdk.version}</version>
+            </dependency>
+
+            <!-- Azure Adal4j -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>adal4j</artifactId>
+                <version>${azure.adal4j.version}</version>
+            </dependency>
+
+            <!-- Azure ApplicationInsights -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>applicationinsights-core</artifactId>
+                <version>${azure.applicationinsights.version}</version>
+            </dependency>
+
+            <!-- Azure EventHub EPH -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-eventhubs-eph</artifactId>
+                <version>${azure.eventhub.eph.version}</version>
+            </dependency>
+
+            <!-- Azure ServiceBus -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-servicebus</artifactId>
+                <version>${azure.servicebus.version}</version>
+            </dependency>
+
+            <!-- Azure Client Runtime -->
+            <dependency>
+                <groupId>com.microsoft.rest</groupId>
+                <artifactId>client-runtime</artifactId>
+                <version>${azure.client.runtime.version}</version>
+            </dependency>
+
+            <!-- Azure Storage -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-storage</artifactId>
+                <version>${azure.storage.version}</version>
+            </dependency>
+
+            <!-- Azure Storage Reactive -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-storage-blob</artifactId>
+                <version>${azure.storage.blob.version}</version>
+            </dependency>
+
+            <!-- Azure DocumentDB -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-documentdb</artifactId>
+                <version>${azure.documentdb.version}</version>
+            </dependency>
+
+            <!-- Azure CosmsoDB (Async) -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-cosmos</artifactId>
+                <version>${azure.cosmos.version}</version>
+            </dependency>
+
+            <!-- Azure Keyvault -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-keyvault</artifactId>
+                <version>${azure.keyvault.version}</version>
+            </dependency>
+
+            <!-- Azure Media -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-media</artifactId>
+                <version>${azure.media.version}</version>
+            </dependency>
+
+            <!-- Spring Data Cosmosdb -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>spring-data-cosmosdb</artifactId>
+                <version>${spring.data.cosmosdb.version}</version>
+            </dependency>
+
+            <!-- Spring Data Gremlin -->
+            <dependency>
+                <groupId>com.microsoft.spring.data.gremlin</groupId>
+                <artifactId>spring-data-gremlin</artifactId>
+                <version>${spring.data.gremlin.version}</version>
+            </dependency>
+
+            <!-- Azure Client Authentication -->
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-client-authentication</artifactId>
+                <version>${azure.client.authentication.version}</version>
+            </dependency>
+
+            <!-- Azure Monitor Micrometer Registry -->
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-registry-azure-monitor</artifactId>
+                <version>${azure.monitor.micrometer.registry.version}</version>
+            </dependency>
+
+            <!-- Micrometer Core -->
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-core</artifactId>
+                <version>${micrometer.core.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
+
